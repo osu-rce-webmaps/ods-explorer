@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-  <meta name="description" content="ODS Explorer: Webmap Dashboard">
+  <meta name="description" content="Outdoor School Explorer: Webmap Dashboard">
   <meta name="author" content="Benji Antolin">
 
-  <title>ODS Explorer</title>
+  <title>Outdoor School Explorer</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -115,7 +115,7 @@
                   <a class="dropdown-item" id="county" value="1">County</a>
                   <a class="dropdown-item" id="sd" value="2">School District</a>
                   <a class="dropdown-item" id="esd" value="3">Education Service District</a>
-                  <a class="dropdown-item" id="odsRgn" value="4">ODS Region</a>
+                  <a class="dropdown-item" id="odsRgn" value="4">Outdoor School Region</a>
                 </center>
               </div>
             </li>
@@ -1096,12 +1096,12 @@
           "<b>Participate in Outdoor School in 2019-20?: </b>" + parText + "<br>" +
           "<b>Outdoor School Provider in 2019-20: </b>" + d.ODS_Provider + "<br>" +
           "<b>Outdoor School Provider in 2019-20: </b>" + d.Location + "<br>" +
-          "<b>Number of 5th Graders attending ODS: </b>" + d.No_5th_Grade + fifthText + "<br>" +
-          "<b>Number of 6th Graders attending ODS: </b>" + d.No_6th_Grade + sixthText + "<br>" +
+          "<b>Number of 5th Graders attending Outdoor School: </b>" + d.No_5th_Grade + fifthText + "<br>" +
+          "<b>Number of 6th Graders attending Outdoor School: </b>" + d.No_6th_Grade + sixthText + "<br>" +
           "<b>School District: </b>" + d.SD + "<br>" +
           "<b>ESD: </b>" + d.ESD + "<br>" +
-          "<b>ODS Region: </b>" + d.ods_region + "<br>" +
-          "<b>ODS Contact: </b>" + "<a href=" + d.ods_contact + " target='_blank'>" + d.ods_coordinator + "</a>",
+          "<b>Outdoor School Region: </b>" + d.ods_region + "<br>" +
+          "<b>Outdoor School Contact: </b>" + "<a href=" + d.ods_contact + " target='_blank'>" + d.ods_coordinator + "</a>",
         ).addTo(schools1920);
 
         var stuPar = 0;
@@ -1143,12 +1143,12 @@
           "<b>Participate in Outdoor School in 2019-20?: </b>" + parText + "<br>" +
           "<b>Outdoor School Provider in 2019-20: </b>" + d.ODS_Provider + "<br>" +
           "<b>Outdoor School Provider in 2019-20: </b>" + d.Location + "<br>" +
-          "<b>Number of 5th Graders attending ODS: </b>" + d.No_5th_Grade + fifthText + "<br>" +
-          "<b>Number of 6th Graders attending ODS: </b>" + d.No_6th_Grade + sixthText + "<br>" +
+          "<b>Number of 5th Graders attending Outdoor School: </b>" + d.No_5th_Grade + fifthText + "<br>" +
+          "<b>Number of 6th Graders attending Outdoor School: </b>" + d.No_6th_Grade + sixthText + "<br>" +
           "<b>School District: </b>" + d.SD + "<br>" +
           "<b>ESD: </b>" + d.ESD + "<br>" +
-          "<b>ODS Region: </b>" + d.ods_region + "<br>" +
-          "<b>ODS Contact: </b>" + "<a href=" + d.ods_contact + " target='_blank'>" + d.ods_coordinator + "</a>",
+          "<b>Outdoor School Region: </b>" + d.ods_region + "<br>" +
+          "<b>Outdoor School Contact: </b>" + "<a href=" + d.ods_contact + " target='_blank'>" + d.ods_coordinator + "</a>",
         ).addTo(schools1819);
         var stuPar = 0;
         var numDays = 0;
@@ -1172,8 +1172,8 @@
           "<b>Outdoor School Provider in 2017-18: </b>" + d.ODS_Provider + "<br>" +
           "<b>School District: </b>" + d.SD + "<br>" +
           "<b>ESD: </b>" + d.ESD + "<br>" +
-          "<b>ODS Region: </b>" + d.ods_region + "<br>" +
-          "<b>ODS Contact: </b>" + "<a href=" + d.ods_contact + " target='_blank'>" + d.ods_coordinator + "</a>"
+          "<b>Outdoor School Region: </b>" + d.ods_region + "<br>" +
+          "<b>Outdoor School Contact: </b>" + "<a href=" + d.ods_contact + " target='_blank'>" + d.ods_coordinator + "</a>"
         ).addTo(schools1718);
         var stuPar = 0;
         var numDays = 0;
@@ -1186,7 +1186,7 @@
       var l = ["Program Length"]
       var house = ["House District"];
       var schoolsPar = ["Number of Schools"];
-      var stuPar = ["Number of Students Participating in ODS"]
+      var stuPar = ["Number of Students Participating in Outdoor School"]
       var avgDays = ["Average Length of Program"]
       var totReq = ["$ Awarded"]
       var reqStu = ["$ Awarded per Student"]
@@ -1813,7 +1813,7 @@
         var l = ["Program Length"]
         var house = ["House District"];
         var schoolsPar = ["Number of Schools"];
-        var stuPar = ["Number of Students Participating in ODS"]
+        var stuPar = ["Number of Students Participating in Outdoor School"]
         var avgDays = ["Average Length of Program"]
         var totReq = ["$ Awarded"]
         var reqStu = ["$ Awarded per Student"]
@@ -2561,7 +2561,7 @@
 
       $("#odsRgn").on("click", function() {
         geoLayer = 4;
-        $("#geoDropdown").text("ODS Region");
+        $("#geoDropdown").text("Outdoor School Region");
         mymap.removeLayer(county1718);
         mymap.removeLayer(county1819);
         mymap.removeLayer(county1920);

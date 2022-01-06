@@ -232,3 +232,16 @@ hr  {
 .fa-1x{
 	font-size: inherit;
 }
+
+#covidWarningBanner {
+	border-radius: 0;
+}
+#covidWarningText {
+	text-align: center;
+	margin: auto;
+	font-size: 1.35rem;
+}
+
+.alert {
+	margin-bottom: 0;
+}
